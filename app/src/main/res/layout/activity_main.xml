@@ -15,7 +15,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/medicine_book_name"
-        android:textSize="24dp"
+        android:textSize="30dp"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/main_banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -31,7 +33,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/main_banner_text"
-        android:textSize="12dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/main_listview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -50,18 +52,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_banner" />
 
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/add_medicine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_listview" />
+
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
+        android:layout_marginStart="250dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="96dp"
-        android:layout_marginBottom="56dp"
-        android:text="@string/add_medicine"
+        android:layout_marginBottom="90dp"
+        android:text="@string/delete_medicine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_listview" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

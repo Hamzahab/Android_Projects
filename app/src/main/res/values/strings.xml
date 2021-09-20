@@ -3,5 +3,6 @@
     <string name="medicine_book_name">Medicine Book</string>
     <string name="enter_date">Enter Date</string>
     <string name="main_banner_text">Please see total medicine listings below:</string>
-    <string name="add_medicine">Add Medicine to List</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="delete_medicine">Delete Medicine</string>
 </resources>
