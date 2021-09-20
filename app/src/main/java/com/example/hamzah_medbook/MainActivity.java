@@ -9,13 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ListView mListView;
-    ArrayAdapter<Medicine> aAdapter;
-    private MedicineBook medBook;
+    MedicineBook medBook = new MedicineBook();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.main_listview);
 
-        //create medicine book
-        medBook = new MedicineBook();
+
 
         //create medicine
         Medicine med1 = new Medicine("2021-09-25" ,"cetirizine hydrochloride", 5, "mg", 1);
@@ -48,7 +47,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddMedicineActivity.class);
-                intent.putExtra("medList",medBook);
+
+                //abstract into bundle
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable("objects", (Serializable) medBook);
+//                intent.putExtra("medBundle",bundle);
                 startActivity(intent);
             }
         });
