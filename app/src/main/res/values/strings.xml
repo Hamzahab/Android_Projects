@@ -5,4 +5,9 @@
     <string name="main_banner_text">Please see total medicine listings below:</string>
     <string name="add_medicine">Add Medicine</string>
     <string name="delete_medicine">Delete Medicine</string>
+    <string name="add_medicine_prompt">Please Add Medicine Below</string>
+    <string name="date_started">date started (yyyy-mm-dd format)</string>
+    <string name="dose_string">Dose Unit (mg or mcg)</string>
+    <string name="daily_frequency_String">Daily Frequency</string>
+    <string name="add">Add</string>
 </resources>
