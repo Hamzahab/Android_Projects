@@ -3,14 +3,6 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:textSize="30sp"
-        android:text="@string/add_medicine_prompt" />
-
     <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_centerHorizontal="true"
@@ -27,17 +19,17 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/date_started"
+            android:hint="@string/date_started"
             />
 
         <EditText
-            android:id="@+id/editTextTextName"
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name" />
+            android:hint="Name" />
 
         <EditText
             android:id="@+id/editTextDose"
@@ -46,7 +38,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Dose Amount" />
+            android:hint="Dose Amount" />
 
         <EditText
             android:id="@+id/editTextUnit"
@@ -55,7 +47,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/dose_string" />
+            android:hint="@string/dose_string" />
 
         <EditText
             android:id="@+id/editTextFreq"
@@ -64,17 +56,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/daily_frequency_String" />
+            android:hint="@string/daily_frequency_String" />
 
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100sp"
-        android:text="@string/add"
-        android:textSize="30dp" />
 </RelativeLayout>

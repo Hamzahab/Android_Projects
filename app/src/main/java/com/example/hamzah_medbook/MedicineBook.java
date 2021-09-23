@@ -7,11 +7,11 @@ import java.util.List;
     Stores all medicine added by user, keeping track of total doses daily
  */
 public class MedicineBook extends ArrayList<Medicine>{
-    private List<Medicine> medicineList;
-    private static int totalMedDose;
+    private static Integer totalMedDose;
 
     MedicineBook() {
         super();
+        totalMedDose = 0;
     }
 
     public List<Medicine> getMedicineList() {
@@ -32,7 +32,7 @@ public class MedicineBook extends ArrayList<Medicine>{
         totalMedDose-=m.getDoseAmount();
     }
 
-    public int getTotalMedDose(){
+    public Integer getTotalMedDose(){
         return totalMedDose;
     }
 

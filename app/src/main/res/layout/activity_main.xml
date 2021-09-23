@@ -9,33 +9,34 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="174dp"
-        android:layout_height="33dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/medicine_book_name"
-        android:textSize="20dp"
         android:textAlignment="center"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/main_banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/main_banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="9dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/main_banner_text"
         android:textSize="17dp"
         app:layout_constraintBottom_toTopOf="@+id/main_listview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:text="@string/main_banner_text" />
@@ -51,32 +52,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_banner" />
 
-
     <Button
         android:id="@+id/button1"
-        android:layout_width="119dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
         android:layout_marginBottom="90dp"
         android:text="@string/add_medicine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_listview" />
+        app:layout_constraintTop_toBottomOf="@+id/main_listview"
+        app:layout_constraintVertical_bias="0.487" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="250dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="34dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="90dp"
         android:text="@string/delete_medicine"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_listview" />
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalMed"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/main_listview"
+        app:layout_constraintVertical_bias="0.478" />
 
+    <TextView
+        android:id="@+id/textViewTotalMed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="85dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/main_listview"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

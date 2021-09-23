@@ -44,4 +44,5 @@ public class MedicineListAdapter extends ArrayAdapter<Medicine> {
         return convertView;
 
     }
+
 }
